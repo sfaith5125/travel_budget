@@ -10,6 +10,9 @@ class HomeView extends StatelessWidget {
     Trip("Boston", DateTime.now(), DateTime.now(), 400.00, "Train"),
     Trip("Austin", DateTime.now(), DateTime.now(), 600.00, "Plane"),
     Trip("Washington DC", DateTime.now(), DateTime.now(), 800.00, "Car"),
+    Trip("Sacremento", DateTime.now(), DateTime.now(), 200.00, "Bicycle"),
+    Trip("Minneapolis", DateTime.now(), DateTime.now(), 600.00, "Snow Shoes"),
+
   ];
 
   Widget build(BuildContext context) {
