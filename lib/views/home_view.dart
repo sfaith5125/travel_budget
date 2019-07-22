@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Trip.dart';
+import 'package:travel_budget/models/Trip.dart';
 import 'package:intl/intl.dart';
-import 'pages.dart';
+
 
 class HomeView extends StatelessWidget {
   @override
