@@ -3,6 +3,7 @@ import 'package:travel_budget/pages.dart';
 import 'package:travel_budget/views/home_view.dart';
 import 'package:travel_budget/views/new_trips/location_view.dart';
 import 'package:travel_budget/models/Trip.dart';
+import 'package:travel_budget/views/explorepage_view.dart';
 
 class Home extends StatefulWidget{
   @override
