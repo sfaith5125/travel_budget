@@ -3,6 +3,7 @@ import 'package:travel_budget/models/Trip.dart';
 import 'package:intl/intl.dart';
 
 
+
 class HomeView extends StatelessWidget {
   @override
   final List<Trip> tripsList = [
@@ -12,10 +13,27 @@ class HomeView extends StatelessWidget {
     Trip("Washington DC", DateTime.now(), DateTime.now(), 800.00, "Car"),
     Trip("Sacremento", DateTime.now(), DateTime.now(), 200.00, "Bicycle"),
     Trip("Minneapolis", DateTime.now(), DateTime.now(), 600.00, "Snow Shoes"),
-
   ];
+//  Attach to Firebase and read the list of items
+
+
+
+//  This is test code to read an item into an iterative list.  I am doing this so that
+  // the next phase is to read directly from firebase into the list so that I can
+  // print out
+
+  final List<String> strListTitle = [];
+
+  void fornext() {
+    for (var t in tripsList){
+      strListTitle.add(t.title);
+
+      // debug code that prints out into the console - print(t.title);
+    }
+  }
 
   Widget build(BuildContext context) {
+    fornext();  // this calls the function that i created to test looping
     return Container(
       child: new ListView.builder(
           itemCount: tripsList.length,
@@ -37,7 +55,8 @@ class HomeView extends StatelessWidget {
               padding: const EdgeInsets.only(top: 8.0, bottom: 4.0),
               child: Row(
                 children: <Widget>[
-                  Text(trip.title, style: new TextStyle(fontSize: 30.0),),
+                  //Text(trip.title, style: new TextStyle(fontSize: 30.0),),
+                  Text(strListTitle[index].toString(), style: new TextStyle(fontSize: 30.0),),
                   Spacer(),
                 ],
               ),

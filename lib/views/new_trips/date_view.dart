@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_budget/models/Trip.dart';
-import 'package:travel_budget/views/budget_view.dart';
+import 'package:travel_budget/views/new_trips/budget_view.dart';
 import 'package:date_range_picker/date_range_picker.dart' as DateRangePicker;
 import 'package:intl/intl.dart';
 import 'dart:async';

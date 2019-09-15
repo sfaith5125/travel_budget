@@ -1,4 +1,4 @@
-
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 
@@ -22,3 +22,22 @@ class Trip {
 
   };
 }
+
+
+//class crudMethods {
+//
+//  getData() async => await Firestore.instance.collection('Trips').getDocuments();
+//
+//
+//}
+
+//class fbTrip {
+//  String title;
+//  DateTime startDate;
+//  DateTime endDate;
+//  double budget;
+//  String travelType;
+//
+//  fbTrip(this.title, this.startDate, this.endDate, this.budget, this.travelType);
+//
+//}
